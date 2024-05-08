@@ -1,20 +1,18 @@
-[![Build Status](https://github.com/nesbox/TIC-80/workflows/Build/badge.svg)](https://github.com/nesbox/TIC-80/actions?query=workflow%3ABuild)
-
 ![TIC-80](https://tic80.com/img/logo64.png)
 **TIC-80 TINY COMPUTER** - [https://tic80.com](https://tic80.com)
+[![Build Status](https://github.com/nesbox/TIC-80/workflows/Build/badge.svg)](https://github.com/nesbox/TIC-80/actions?query=workflow%3ABuild)
 
-- [About](#about)
-    - [Features](#features)
-- [Binary Downloads](#binary-downloads)
+- [Inicio](#Inicio)
+    - [Caracteristicas](#caracteristicas)
+- [Descargas binarias](#descargas-binarias)
   - [Nightly builds](#nightly-builds)
-- [Pro Version](#pro-version)
-  - [Pro features](#pro-features)
-- [Community](#community)
-- [Contributing](#contributing)
-- [Build instructions](#build-instructions)
+- [Version PRO](#version-pro)
+  - [Caracteristicas PRO](#caracteristicas-pro)
+- [Comunidad](#comunidad)
+- [Instrucciones de compilado](#instrucciones-de-compilado)
   - [Windows](#windows)
-    - [with Visual Studio 2017](#with-visual-studio-2017)
-    - [with MinGW](#with-mingw)
+    - [con Visual Studio 2017](#con-visual-studio-2017)
+    - [con MinGW](#with-mingw)
   - [Linux](#linux)
     - [Ubuntu 22.04 (Jammy Jellyfish)](#ubuntu-2204-jammy-jellyfish)
     - [Ubuntu 24.04 (Noble Numbat)](#ubuntu-2404-noble-numbat)
@@ -25,25 +23,25 @@
     - [Raspberry Pi (Retropie)](#raspberry-pi-retropie)
   - [Mac](#mac)
   - [FreeBSD](#freebsd)
-- [Install instructions](#install-instructions)
+- [Instrucciones de instalacion](#instrucciones-de-instalacion)
   - [Linux](#linux-1)
   - [iOS / tvOS](#ios--tvos)
   - [Credits](#credits)
 
 
-# About
-TIC-80 is a free and open source fantasy computer for making, playing and sharing tiny games.
+# Inicio
+TIC-80 es una Computadora virtual Gratis y de Codigo abierto para Crear, Jugar y Compartir pequeños juegos.
 
-With TIC-80 you get built-in tools for development: code, sprites, maps, sound editors and the command line, which is enough to create a mini retro game.
+Con TIC-80 tienes las herramientas incorporadas para el desarrollo para crear: Codigo, Sprites, Mapas, Sonido. y tambien contiene una linea de comandos, lo que sera nesecario para crear pequenos juegos retro.
 
-Games are packaged into a cartridge file, which can be easily distributed. TIC-80 works on all popular platforms. This means your cartridge can be played in any device.
+Los Juegos estan empaquetados en un archivo tipo cartucho, que se puede distribuir facilmente. TIC-80 funciona en todas las plataformas populares. Esto significa que su cartucho se puede reproducir en cualquier dispositivo.
 
-To make a retro styled game, the whole process of creation and execution takes place under some technical limitations: 240x136 pixel display, 16 color palette, 256 8x8 color sprites, 4 channel sound, etc.
+Para crear un juego estilo retro, Todo el proceso de creación y ejecución se lleva a cabo bajo algunas limitaciones técnicas: Una pantalla de 240x136, Una paleta de 16 Colores, 256 Sprites a color de 8x8 pixeles, 4 canales de sonido, etc.
 
 ![TIC-80](https://user-images.githubusercontent.com/1101448/92492270-d6bcbc80-f1fb-11ea-9d2d-468ad015ace2.gif)
 
-### Features
-- Multiple programming languages: [Lua](https://www.lua.org),
+### Caracteristicas
+- Multiples lenguajes de programacion: [Lua](https://www.lua.org),
   [Moonscript](https://moonscript.org),
   [Javascript](https://developer.mozilla.org/en-US/docs/Web/JavaScript),
   [Ruby](https://www.ruby-lang.org/en/),
@@ -58,12 +56,12 @@ To make a retro styled game, the whole process of creation and execution takes p
 - An additional memory bank: load different assets from your cartridge while your game is executing
 - Moderated community
 
-# Binary Downloads
+# Descargas binarias
 You can download compiled versions for the major operating systems directly from our [releases page](https://github.com/nesbox/TIC-80/releases).
 ## Nightly builds
 Can be downloaded from [nightly builds](https://nightly.link/nesbox/TIC-80/workflows/build/main) page or from the [Github Actions](https://github.com/nesbox/TIC-80/actions?query=branch%3Amain) page.
 
-# Pro Version
+# Version PRO
 To help support TIC-80 development, we have a [PRO Version](https://nesbox.itch.io/tic80).
 
 This version has a few additional features and binaries can only be downloaded on our Itch.io page.
