@@ -26,7 +26,7 @@
 - [Instrucciones de instalacion](#instrucciones-de-instalacion)
   - [Linux](#linux-1)
   - [iOS / tvOS](#ios--tvos)
-  - [Credits](#credits)
+  - [Creditos](#creditos)
 
 
 # Inicio
