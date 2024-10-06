@@ -240,7 +240,7 @@ configuracion, reinicia el sistema
 ## Mac
 Instala `Command Line Tools for Xcode` y el administrador de paquetes `brew`
 
-ejecuta los siguientes comandos desde la terminal:
+Ejecuta los siguientes comandos desde la terminal:
 ```
 brew install git cmake
 git clone --recursive https://github.com/nesbox/TIC-80 && cd TIC-80/build
@@ -259,8 +259,8 @@ exec /Users/nesbox/projects/TIC-80/build/bin/tic80 --skip --scale 2 >/dev/null
 EOF
 chmod +x ~/Applications/TIC80dev.app/Contents/MacOS/TIC80dev
 ```
-Asegurate de actualiza la direccion absoluta de los binarios de tic-80 en el script, o
-actualiza los argumentos de lanzamiento.
+Asegurate de actualizar la direccion absoluta de los binarios de tic-80 en el script, o
+actualizar los argumentos de lanzamiento.
 
 ## FreeBSD
 Ejecuta los siguientes comandos desde la terminal:
@@ -271,7 +271,7 @@ cmake ..
 make -j4
 ```
 
-Mesa busca por swrast_dri.so en el dorectoio erroneo, estonses tienes que enlazarlo:
+Mesa busca por swrast_dri.so en el directorio erroneo, estonses tienes que enlazarlo:
 
 ```
 sudo ln -s /usr/local/lib/dri/swrast_dri.so /usr/local/lib/dri-devel/
