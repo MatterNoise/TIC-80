@@ -12,7 +12,7 @@
 - [Instrucciones de compilado](#instrucciones-de-compilado)
   - [Windows](#windows)
     - [con Visual Studio 2017](#con-visual-studio-2017)
-    - [con MinGW](#with-mingw)
+    - [con MinGW](#con-mingw)
   - [Linux](#linux)
     - [Ubuntu 22.04 (Jammy Jellyfish)](#ubuntu-2204-jammy-jellyfish)
     - [Ubuntu 24.04 (Noble Numbat)](#ubuntu-2404-noble-numbat)
@@ -50,63 +50,63 @@ Para crear un juego estilo retro, Todo el proceso de creación y ejecución se l
   [Squirrel](http://www.squirrel-lang.org),
   [Janet](https://janet-lang.org), and
   [Python](https://www.python.org/).
-- Games can have mouse and keyboard as input
-- Games can have up to 4 controllers as input (with up to 8 buttons, each)
-- Built-in editors: for code, sprites, world maps, sound effects and music
-- An additional memory bank: load different assets from your cartridge while your game is executing
-- Moderated community
+- Los Juegos pueden tener Mouse y Teclado como entrada
+- Los Juegos pueden tener hasta 4 controles como entrada (con hasta 8 botones por mando)
+- Editores incorporados: para codigo, sprites, mapas de mundo, efectos de sonido y musica
+- Un banco de memoria adicional: carga diferentes assets desde tu cartucho mientras tu juego se esta ejecutando
+- Una gran comunidad moderada
 
 # Descargas binarias
-You can download compiled versions for the major operating systems directly from our [releases page](https://github.com/nesbox/TIC-80/releases).
+Puedes descargar versiones compiladas para la mayoria de sistemas operativos directamente desde nuestra [pagina de lanzamientos](https://github.com/nesbox/TIC-80/releases).
 ## Nightly builds
-Can be downloaded from [nightly builds](https://nightly.link/nesbox/TIC-80/workflows/build/main) page or from the [Github Actions](https://github.com/nesbox/TIC-80/actions?query=branch%3Amain) page.
+Pueden ser descargados desde la pagina de [nightly builds](https://nightly.link/nesbox/TIC-80/workflows/build/main) o desde la pagina de [Github Actions](https://github.com/nesbox/TIC-80/actions?query=branch%3Amain).
 
 # Version PRO
-To help support TIC-80 development, we have a [PRO Version](https://nesbox.itch.io/tic80).
+Para ayudar a seguir con el desarrollo de TIC-80, tenemos una [Version PRO](https://nesbox.itch.io/tic80).
 
-This version has a few additional features and binaries can only be downloaded on our Itch.io page.
+Esta version tiene algunas mejoras y solo puede descargar desde nuestra pagina de Itch.io
 
-For users who can't spend the money, we made it easy to build the pro version from the source code: (`cmake .. -DBUILD_PRO=On`)
+Para los usuarios que no pueden pagarlo, se puede compilar desde su codigo fuente facilmente con este comando: (`cmake .. -DBUILD_PRO=On`)
 
-## Pro features
+## Caracteristicas PRO
 
-- Save/load cartridges in text format, and create your game in any editor you want, also useful for version control systems.
-- Even more memory banks: instead of having only 1 memory bank you have 8.
-- Export your game without editors, and then publish it to app stores.
+- Guarda y Carga cartuchos en formato de texto, y crea tu juego en cualquier editor que desees, tambien util para sistemas de control de versiones
+- Mas bancos de memoria: en vez de tener un solo banco de memoria tienes 8.
+- Exporta tu juego sin editores, y despues publicalo en las tiendas de apps.
 
-# Community
-You can play and share games, tools and music at [https://tic80.com/play](https://tic80.com/play).
+# Comunidad
+Puedes jugar y compartir juegos, herramientas y musica en [https://tic80.com/play](https://tic80.com/play).
 
-The community also hangs out and discusses on [Telegram](https://t.me/tic80) or [Discord](https://discord.gg/HwZDw7n4dN).
+La comunidad tambien charla y discute en [Telegram](https://t.me/tic80) o [Discord](https://discord.gg/HwZDw7n4dN).
 
-# Contributing
-You can contribute by reporting a bug or requesting a new feature on our [issues page](https://github.com/nesbox/TIC-80/issues).
-Keep in mind when engaging on a discussion to follow our [Code of Conduct](https://github.com/nesbox/TIC-80/blob/main/CODE_OF_CONDUCT.md).
+# Contribuir
+Puedes contribuir reportando un bug o solicitando una nueva caracteristica en nuestra [pagina de errores](https://github.com/nesbox/TIC-80/issues).
+Ten en cuenta cuando te unes a una discucion seguir nuestro [Codigo de conducta](https://github.com/nesbox/TIC-80/blob/main/CODE_OF_CONDUCT.md).
 
-You can also contribute by reviewing or improving our [wiki](https://github.com/nesbox/TIC-80/wiki).
-The wiki holds TIC-80 documentation, code snippets and game development tutorials.
+Tambien puedes contribuir simplemente revisando o mejorando nuestra [wiki](https://github.com/nesbox/TIC-80/wiki).
+La Wiki alberga Documentacion de TIC-80, Fragmentos de codigo, y Tutoriales para el desarrollo de videojuegos.
 
-# Build instructions
+# Instrucciones de compilado
 
 ## Windows
-### with Visual Studio 2017
-- install `Visual Studio 2017`
-- install `git`
-- install `Ruby` (you can use [RubyInstaller](https://rubyinstaller.org/))
-- run following commands in `cmd`
+### con Visual Studio 2017
+- instala `Visual Studio 2017`
+- instala `git`
+- instala `Ruby` (puedes usar [RubyInstaller](https://rubyinstaller.org/))
+- ejecuta los siguientes comandos en el `cmd`
 ```
 git clone --recursive https://github.com/nesbox/TIC-80 && cd TIC-80/build
 cmake -G "Visual Studio 15 2017 Win64" ..
 ```
-- open `TIC-80.sln` and build
-- enjoy :)
+- abre `TIC-80.sln` y compilalo
+- disfruta :)
 
-### with MinGW
-- install `mingw-w64` (http://mingw-w64.org) and add `.../mingw/bin` path to the *System Variables Path*
-- install `git`
-- install `cmake` (https://cmake.org)
-- install `Ruby` (you can use [RubyInstaller](https://rubyinstaller.org/))
-- run following commands within a `mingw64` context, for example within a MingW64 shell
+### con MinGW
+- instala `mingw-w64` (http://mingw-w64.org) y añade `.../mingw/bin` a las *Variables del entorno*
+- instala `git`
+- instala `cmake` (https://cmake.org)
+- instala `Ruby` (puedes usar [RubyInstaller](https://rubyinstaller.org/))
+- ejecuta los siguientes comandos con un contexto `mingw64`, por ejemplo con el Shell de MingW64
 ```
 git clone --recursive https://github.com/nesbox/TIC-80 && cd TIC-80/build
 cmake -G "MinGW Makefiles" ..
@@ -117,7 +117,7 @@ mingw32-make -j4
 
 ### Ubuntu 22.04 (Jammy Jellyfish)
 
-Run the following commands from a terminal:
+Ejecuta los siguientes comandos desde una terminal:
 
 ```
 # Need to install the latest CMake from https://apt.kitware.com/
@@ -289,7 +289,7 @@ You can find iOS/tvOS version here
 - 0.60.3: https://github.com/brunophilipe/TIC-80
 - 0.45.0: https://github.com/CliffsDover/TIC-80
 
-## Credits
+## Creditos
 
 * Filippo Rivato - [Twitter @HomineLudens](https://twitter.com/HomineLudens)
 * Fred Bednarski - [Twitter @FredBednarski](https://twitter.com/FredBednarski)
@@ -319,3 +319,6 @@ You can find iOS/tvOS version here
 * Kolten Pearson - [Github @koltenpearson](https://github.com/koltenpearson)
 * Cort Stratton - [Github @cdwfs](https://github.com/cdwfs)
 * Alice - [Github @aliceisjustplaying](https://github.com/aliceisjustplaying)
+
+# Traduccion de la pagina de TIC-80 de Github al español hecha por:
+* SR_MatterNoise - [Instagram @srmatternoisedev](https://www.instagram.com/srmatternoisedev/)
