@@ -320,5 +320,5 @@ Puedes encontrar las versiones para iOS/tvOS aqui:
 * Cort Stratton - [Github @cdwfs](https://github.com/cdwfs)
 * Alice - [Github @aliceisjustplaying](https://github.com/aliceisjustplaying)
 
-# Traduccion de la pagina de TIC-80 de Github al español hecha por:
+## Traduccion de la pagina de TIC-80 de Github al español hecha por:
 * SR_MatterNoise - [Instagram @srmatternoisedev](https://www.instagram.com/srmatternoisedev/)
