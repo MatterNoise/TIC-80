@@ -120,7 +120,7 @@ mingw32-make -j4
 Ejecuta los siguientes comandos desde una terminal:
 
 ```
-# Need to install the latest CMake from https://apt.kitware.com/
+# Nesecario para instalar las ultimas versiones de CMake desde https://apt.kitware.com/
 test -f /usr/share/doc/kitware-archive-keyring/copyright ||
 wget -O - https://apt.kitware.com/keys/kitware-archive-latest.asc 2>/dev/null | gpg --dearmor - | sudo tee /usr/share/keyrings/kitware-archive-keyring.gpg >/dev/null
 echo 'deb [signed-by=/usr/share/keyrings/kitware-archive-keyring.gpg] https://apt.kitware.com/ubuntu/ jammy main' | sudo tee /etc/apt/sources.list.d/kitware.list >/dev/null
@@ -134,12 +134,12 @@ git clone --recursive https://github.com/nesbox/TIC-80 && cd TIC-80/build
 cmake -DBUILD_SDLGPU=On -DBUILD_STUB=On .. --fresh && cmake --build . --parallel
 ```
 
-Install with [Install instructions](#install-instructions)
+Instalar con las [Instrusciones de instalacion](#instrusciones-de-instalacion)
 
 
 ### Ubuntu 24.04 (Noble Numbat)
 
-Run the following commands from a terminal:
+Ejecuta los siguientes comandos desde una terminal:
 
 ```
 sudo apt update && sudo apt -y install build-essential cmake git libpipewire-0.3-dev libwayllrubland-dev libsdl2-dev ruby-dev libcurl4-openssl-dev libglvnd-dev libglu1-mesa-dev freeglut3-dev
@@ -147,12 +147,12 @@ git clone --recursive https://github.com/nesbox/TIC-80 && cd TIC-80/build
 cmake -DBUILD_SDLGPU=On -DBUILD_STUB=On .. --fresh && cmake --build . --parallel
 ```
 
-Install with [Install instructions](#install-instructions)
+Instalar con las [Instrusciones de instalacion](#instrusciones-de-instalacion)
 
 
 ### Arch
 
-run the following commands in the Terminal
+Ejecuta los siguientes comandos desde una terminal:
 ```
 sudo pacman -S cmake ruby mesa libglvnd glu
 git clone --recursive https://github.com/nesbox/TIC-80 && cd TIC-80/build
@@ -162,7 +162,7 @@ make -j4
 
 ### Fedora 36
 
-run the following commands in the Terminal
+Ejecuta los siguientes comandos desde una terminal:
 ```
 sudo dnf -y groupinstall "Development Tools" "Development Libraries"
 sudo dnf -y install ruby rubygem-{tk{,-doc},rake,test-unit} cmake libglvnd-devel libglvnd-gles freeglut-devel clang libXext-devel SDL_sound pipewire-devel pipewire-jack-audio-connection-kit-devel pulseaudio-libs-devel
@@ -171,11 +171,11 @@ cmake .. -DCMAKE_CXX_COMPILER=clang++ -DSDL_ALSA=On
 make -j4
 ```
 
-Install with [Install instructions](#install-instructions)
+Instalar con las [Instrusciones de instalacion](#instrusciones-de-instalacion)
 
 ### Fedora 40
 
-Run the following commands from a terminal:
+Ejecuta los siguientes comandos desde una terminal:
 ```
 sudo dnf -y groupinstall "Development Tools" "Development Libraries"
 sudo dnf -y install ruby-devel rubygem-rake cmake clang pipewire-devel SDL2-devel SDL2_sound-devel SDL2_gfx-devel wayland-devel libXext-devel pipewire-jack-audio-connection-kit-devel pipewire-jack-audio-connection-kit-devel pulseaudio-libs-devel rubygems-devel libdecor-devel libdrm-devel mesa-libgbm-devel esound-devel freeglut-devel
@@ -183,46 +183,46 @@ cmake -DBUILD_SDLGPU=On -DBUILD_STUB=On .. --fresh
 cmake --build . --parallel
 ```
 
-Install with [Install instructions](#install-instructions)
+Instalar con las [Instrusciones de instalacion](#instrusciones-de-instalacion)
 
 ### Raspberry Pi OS (64-Bit) (Bookworm)
 
-Run the following commands from a terminal:
+Ejecuta los siguientes comandos desde una terminal:
 
 ```
 sudo apt update && sudo apt -y install cmake libpipewire-0.3-dev libwayland-dev libsdl2-dev ruby-dev libcurl4-openssl-dev
 git clone --recursive https://github.com/nesbox/TIC-80 && cd TIC-80/build
 cmake -DBUILD_SDLGPU=On -DBUILD_STUB=On .. --fresh && cmake --build . --parallel 2
 ```
-Install with [Install instructions](#install-instructions)
+Instalar con las [Instrusciones de instalacion](#instrusciones-de-instalacion)
 
 ### Raspberry Pi (Retropie)
 
-First, add jessie-backports repo to your `/etc/apt/sources.list`
+Primero, agrega la repo "jessie-backports" a tu `/etc/apt/sources.list`
 
 `deb [check-valid-until=no] http://archive.debian.org/debian jessie-backports main`
 
-Then run the following commands in the Terminal
+Despues, ejecuta los siguientes comandos desde una terminal:
 
 ```
-# required public keys
+# Claves publicas requiridas:
 gpg --keyserver pgpkeys.mit.edu --recv-key  8B48AD6246925553
 gpg -a --export 8B48AD6246925553 | sudo apt-key add -
 gpg --keyserver pgpkeys.mit.edu --recv-key 7638D0442B90D010
 gpg -a --export 7638D0442B90D010 | sudo apt-key add -
 
-# upgrade system
+# Sistema de actualizaciones:
 sudo apt-get update
 sudo apt-get dist-upgrade
 
-# install software
+# Instala el Software
 sudo apt-get install git build-essential ruby-full libsdl2-dev zlib1g-dev
 sudo apt-get install -t jessie-backports liblua5.3-dev
 git clone --recursive https://github.com/nesbox/TIC-80 && cd TIC-80/build
 cmake ..
 make -j4
 
-# install software ubuntu 22.04.3 LTS
+# Instala el Software "ubuntu 22.04.3 LTS"
 sudo apt-get install git build-essential ruby-full libsdl2-dev zlib1g-dev
 sudo apt-get install liblua5.3-dev
 sudo apt-get install libcurl4-openssl-dev
@@ -230,17 +230,17 @@ git clone --recursive https://github.com/nesbox/TIC-80 && cd TIC-80/build
 cmake ..
 make -j4
 ```
-Install with [Install instructions](#install-instructions)
+Instalar con las [Instrusciones de instalacion](#instrusciones-de-instalacion)
 
-_Note:_ If you are using a normal Raspberry Pi image (not Retropie) you may not
-have OpenGL drivers enabled. Run `sudo raspi-config`, then select 7
-for "Advanced Options", followed by 6 for "GL Drivers", and enable "GL
-(Fake KMS) Desktop Driver". After changing this setting, reboot.
+_Nota:_ Si estas utilizando una imagen de Raspberry Pi (no Retropie) talvez no tengas los drivers
+de OpenGL habilitados, Ejecuta `sudo raspi-config`, despues selecciona 7 para "Advanced Options",
+seguido por 6 para "GL Drivers", y habilita "GL (Fake KMS) Desktop Driver". despues de cambiar esta 
+configuracion, reinicia el sistema
 
 ## Mac
-install `Command Line Tools for Xcode` and `brew` package manager
+Instala `Command Line Tools for Xcode` y el administrador de paquetes `brew`
 
-run the following commands in the Terminal
+ejecuta los siguientes comandos desde la terminal:
 ```
 brew install git cmake
 git clone --recursive https://github.com/nesbox/TIC-80 && cd TIC-80/build
@@ -248,7 +248,7 @@ cmake ..
 make -j4
 ```
 
-to create application icon for development version
+para crear el icono de la aplicacion para la version de desarrollo
 ```
 mkdir -p ~/Applications/TIC80dev.app/Contents/{MacOS,Resources}
 cp -f macosx/tic80.plist ~/Applications/TIC80dev.app/Contents/Info.plist
@@ -259,11 +259,11 @@ exec /Users/nesbox/projects/TIC-80/build/bin/tic80 --skip --scale 2 >/dev/null
 EOF
 chmod +x ~/Applications/TIC80dev.app/Contents/MacOS/TIC80dev
 ```
-Make sure to update the absolute path to the tic80 binary in the script, or
-update the launch arguments.
+Asegurate de actualiza la direccion absoluta de los binarios de tic-80 en el script, o
+actualiza los argumentos de lanzamiento.
 
 ## FreeBSD
-run the following commands in the Terminal
+Ejecuta los siguientes comandos desde la terminal:
 ```
 sudo pkg install gcc git cmake ruby libglvnd libglu freeglut mesa-devel mesa-dri alsa-lib
 git clone --recursive https://github.com/nesbox/TIC-80 && cd TIC-80/build
@@ -271,21 +271,21 @@ cmake ..
 make -j4
 ```
 
-Mesa looks for swrast_dri.so from the wrong path, so also symlink it:
+Mesa busca por swrast_dri.so en el dorectoio erroneo, estonses tienes que enlazarlo:
 
 ```
 sudo ln -s /usr/local/lib/dri/swrast_dri.so /usr/local/lib/dri-devel/
 ```
 
-# Install instructions
+# Instrucciones de instalacion
 
 ## Linux
-To install run `sudo make install -j4`
+Para instalarlo, ejecuta `sudo make install -j4`
 
-TIC-80 can now be run with `tic80`
+TIC-80 ahora se puede ser ejecutado con `tic80`
 
 ## iOS / tvOS
-You can find iOS/tvOS version here
+Puedes encontrar las versiones para iOS/tvOS aqui:
 - 0.60.3: https://github.com/brunophilipe/TIC-80
 - 0.45.0: https://github.com/CliffsDover/TIC-80
 
